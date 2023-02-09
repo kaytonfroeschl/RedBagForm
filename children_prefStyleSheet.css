@@ -1,0 +1,159 @@
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+body {
+    padding: 1em;
+    font-family: "Open Sans", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    color: #b9b9b9;
+    background-color: #e3e3e3;
+}
+h3, h4, h5 {
+    color: #D32F2F;
+}
+.container {
+    max-width: 40em;
+    padding: 1em 3em 2em 3em;
+    margin: 0em auto;
+    background-color: #fff;
+    border-radius: 4.2px;
+    box-shadow: 0px 3px 10px -2px rgba(0, 0, 0, 0.2);
+    display:table;
+}
+.infant_table{
+    width:100%;
+}
+td{
+   /* border: 1px solid pink;*/
+}
+
+td, tr {
+    padding: 12px;
+}
+input:focus {
+    outline: 0;
+    border-color: #D32F2F;
+}
+
+input{
+    padding: 1em;
+    background-color: #f9f9f9;
+    border: 1px solid #e5e5e5;
+    border-radius: 3px;
+    width:100%;
+}
+.num_input{
+    width:70px;
+}
+.num_label{
+    font-size: 10px;
+}
+input[type="checkbox"] {
+    display: none;
+    border: 0.15em solid currentColor;
+    border-radius: 0.15em;
+    display: grid;
+    place-content: center;
+}
+/* Hide the default style of the checkbox */
+input[type=checkbox] {
+    visibility: hidden;
+}
+  /* Create a custom checkbox */
+  .box {
+    display: block;
+    position: relative;
+    padding-left: 30px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-bottom:-15px;
+    margin-top:-10px;
+}
+  .mark {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px;
+    width: 20px;
+    background-color: #999999;
+  }
+  /* Specify the background color for the checkbox while hovering */
+  .box:hover .inputcb + .mark {
+    background-color: #D32F2F;
+  }
+  /* Specify the background color for the checkbox when the checkbox is active */
+  .box .inputcb:active + .mark {
+    background-color: #047A07;
+  }
+  /* Specify the background color for the checkbox when it is checked */
+  .box .inputcb:checked + .mark {
+    background-color: #047A07;
+  }
+  /* Checkmark to be shown in checkbox */
+  /* It will not be shown when not checked */
+  .mark:after {
+    content: "";
+    position: absolute;
+    display: none;
+  }
+  /* Display checkmark when checked */
+  .box .inputcb:checked + .mark:after {
+    display: block;
+  }
+  /* Styling the checkmark using webkit */
+  /* Rotated the rectangle by 45 degree and showing only two border to make it look like a tick mark */
+  .box .mark:after {
+    left: 7px;
+    bottom: 5px;
+    width: 8px;
+    height: 14px;
+    border: solid #eee;
+    border-width: 0 3px 3px 0;
+    -webkit-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    transform: rotate(45deg);
+  }
+
+.total_children{
+    font-size: 15px;
+    font-weight: bold;
+    color: red;
+    text-align: center;
+}
+.link:link {
+    color: #D32F2F;
+}
+.link:visited {
+    color: #D32F2F;
+}
+
+/*next and previous */
+.next {
+    text-decoration: none;
+    padding: 15px 30px;
+    background-color: #047A07;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'Calistoga';
+}
+.next:hover {
+    background-color: #40bc44;
+}
+.previous{
+    text-decoration: none;
+    padding: 15px 15px;
+    background-color: #047A07;
+    color: white;
+    border-radius: 3px;
+    font-size: 20px;
+    font-family: 'Calistoga';
+}
+.previous:hover {
+    background-color: #40bc44;
+}
+.divbtn{
+    text-align: center;
+}
+
